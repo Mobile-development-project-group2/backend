@@ -27,7 +27,7 @@ export const getCompetition = async (
   try {
     console.log("here");
     const response = await axios.get(
-      `https://api.football-data.org/v4/competitions/${leagueCode}`,
+      `https://api.football-data.org/v4/competitions/${leagueCode}/standings`,
       {
         headers: { "X-Auth-Token": API_KEY },
       }

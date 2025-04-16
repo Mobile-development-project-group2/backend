@@ -13,6 +13,7 @@ export const getTeamInformation = async (
         headers: { "X-Auth-Token": API_KEY },
       }
     );
+    console.log("response", response.data);
     return { success: true, data: response.data };
   } catch {
     return { success: false, error: "Failed to fetch club information" };
