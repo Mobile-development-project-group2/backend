@@ -2,4 +2,4 @@
 
 /.env
 /.dist
-/.firebaseServiceAccountKey.json
+firebaseServiceAccountKey.json
