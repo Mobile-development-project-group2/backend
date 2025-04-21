@@ -8,9 +8,10 @@ import teamsRoutes from "./routes/teamsRoutes";
 import { updateMatch } from "./services/matchUpdateService";
 import * as admin from "firebase-admin";
 import fs from "fs";
+import { FIREBASE_TOKEN } from "./config";
 
 const serviceAccount = JSON.parse(fs.readFileSync("firebaseServiceAccountKey.json", "utf8"));
-const deviceToken = 'ezPcTEDWSCCakFa_UngoU0:APA91bGzCO3s_WOrfANnj7AudVY6iYsFlkV66b-_M_Ph0x21is0wY9b-FaPNKad3FhC2nHUuA9tC7oOleptezl26xzYv9vrpneaWVNmhGQoFXTcW7WOytc8';
+const deviceToken = FIREBASE_TOKEN;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
