@@ -12,11 +12,9 @@ const realMadridPlayers = [
 
 const barcelonaPlayers = ["Lewandowski", "Pedri", "Gavi", "Yamal", "Raphinha"];
 
-// Function to update match state
 export function updateMatch() {
   mockMatch.minute += 1;
 
-  // 20% chance of a goal being scored on each update
   if (Math.random() <= 0.99) {
     const scoringTeam = Math.random() < 0.5 ? "HOME" : "AWAY";
 

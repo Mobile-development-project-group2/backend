@@ -63,6 +63,10 @@ setInterval(() => {
 
 app.use("/api/competitions", competitionsRoutes);
 app.use("/api/teams", teamsRoutes);
+app.get("/api/match", (req, res) => {
+  console.log("Match data requested");
+  res.json(matchData);
+});
 
 server.listen(3000, () => {
   console.log("Server is running with Socket.IO on port 3000");
