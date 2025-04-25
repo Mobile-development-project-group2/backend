@@ -116,3 +116,16 @@ export type Standings = {
   season: Season;
   standings: StandingsTable[];
 };
+
+export type RawMatchByDate = {
+  utcDate: string;
+  homeTeam: { name: string };
+  awayTeam: { name: string };
+};
+
+export type SimplifiedMatch = {
+  homeTeam: string;
+  awayTeam: string;
+  date: string;
+  time: string;
+};

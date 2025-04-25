@@ -3,14 +3,45 @@ import { mockMatch } from "../data/mockMatch";
 import { GoalEvent } from "../models/match";
 
 const realMadridPlayers = [
-  "Bellingham",
-  "Vinícius Jr.",
+  "Antonio Rüdiger",
+  "Dani Carvajal",
+  "David Alaba",
+  "Éder Militão",
+  "Ferland Mendy",
+  "Fran García",
+  "Jesús Vallejo",
+  "Lucas Vázquez",
+  "Arda Güler",
+  "Aurélien Tchouaméni",
+  "Dani Ceballos",
+  "Eduardo Camavinga",
+  "Federico Valverde",
+  "Jude Bellingham",
+  "Luka Modrić",
+  "Brahim Díaz",
+  "Endrick",
+  "Kylian Mbappé",
   "Rodrygo",
-  "Mbappé",
-  "Modric",
+  "Vinícius Jr.",
 ];
 
-const barcelonaPlayers = ["Lewandowski", "Pedri", "Gavi", "Yamal", "Raphinha"];
+const barcelonaPlayers = [
+  "Pau Cubarsí",
+  "Alejandro Balde",
+  "Ronald Araújo",
+  "Andreas Christensen",
+  "Gerard Martín",
+  "Gavi",
+  "Pedri",
+  "Frenkie de Jong",
+  "Pablo Torre",
+  "Dani Olmo",
+  "Robert Lewandowski",
+  "Ansu Fati",
+  "Raphinha",
+  "Ferran Torres",
+  "Lamine Yamal",
+];
 
 export function updateMatch() {
   mockMatch.minute += 1;
